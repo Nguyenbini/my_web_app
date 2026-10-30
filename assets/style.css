@@ -1,0 +1,13 @@
+/* Style dùng chung cho toàn ứng dụng */
+:root {
+  --ink: #1d3557;
+  --jade: #2a9d8f;
+  --mist: #eef4f3;
+}
+h1, h2, h3 { color: var(--ink); letter-spacing: -0.01em; }
+section[data-testid="stSidebar"] { background: var(--mist); }
+.stButton > button {
+  background: var(--jade); color: #fff; border: none; border-radius: 6px;
+}
+.stButton > button:hover { background: var(--ink); }
+.stButton > button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
